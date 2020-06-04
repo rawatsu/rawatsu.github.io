@@ -268,10 +268,30 @@
 
             <h4 id="DS-text" class="DS-sub">Dynamical system</h4>
 
-            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>  
+                            <p>In last few decades, dynamical system theory have found its way to theory of turbulence. Fluid flow can be explained from the solution of Navier-Stokes equation. The solution described by this  nonlinear partial differential equation is infinite dimensional, as one need
+                            infinite ordinary differential equation to solve this PDE. Hopf conjectured that solution of N-S equations can be represented as a point in an infinite-dimensional phase space of the problem, constituted by suitably chosen state space variables. He further
+                             hypothesized that these solution lie on a finite dimensional manifold, size of whose dimension depends upon the viscosity, varing from 0 for \(\nu \to \infty \), to \(\infty\) for \(\nu \to 0\). This low-dimensional manifold  becomes unstable and bifurcates
+                            into many other branches as viscosity \(\nu\) is decreased. It can be demonstrated mathematically that the solutions of dissipative PDE's are restricted to global attracters which are embedded in <i>inertial manifolds</i></p> 
+            
+                          <p>In dynamic system theory the equation of motion is  generally represented as :
 
-            </div>         
+ $$\frac{d\textbf{u}}{dt} = f(\textbf{u},\nu)$$
+ 
+where \(\textbf{f}\) is a evolution function that map one point in phase space to another. For a deterministic dynamical system like Navier-Stokes, each single point in phase space represents a physical state of the system. Coherent structures observed in turbulent flows are considered 
+to be as low-dimensional invariant sets in phase space. These invariant states can be classified into three main categories :</p>
+                              
+    <ol>
+    <li>\(\frac{d\textbf{u}}{dt} = f(u,\nu) = 0\); Travelling waves, equillibrium points.</li> 
+    <li> \(\textbf{u(x,t)} = \textbf{u(x,t+T)}\);  periodic or relative periodic orbits.</li> 
+    <li>\(\textbf{u(x,t)} \neq \textbf{u(x,t')}\);  for all \(t \neq t'\) aperiodic trajectories.</li> 
+   </ol>
+            
+                
+       </div>
+
+
+
+       </div>         
    
     </div>    
       
@@ -365,6 +385,10 @@
   <script src="js/scrollreveal.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/creative.min.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
   
 </body>
 </html>
